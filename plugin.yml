@@ -1,0 +1,9 @@
+name: ShittyPlugin
+main: com.gmail.robmadeyou.Body
+version: 1
+commands:
+   aber:
+      description: This is a demo command.
+      usage: /robmadeyou
+      permission: test.basic
+      permission-message: You don't have <permission>
