@@ -13,8 +13,7 @@ public class In implements CommandExecutor{
 	}
 	
 	@Override
-	public boolean onCommand(CommandSender sender, Command cmd, String label,
-			String[] arguments) {
+	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] arguments) {
 		Aber.manageInput(plugin, sender, cmd, label, arguments);
 		return false;
 	}
