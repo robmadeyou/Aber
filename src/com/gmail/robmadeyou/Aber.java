@@ -8,12 +8,13 @@ import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.event.player.PlayerJoinEvent;
 
+import com.gmail.robmadeyou.Fun.Boom;
 import com.gmail.robmadeyou.Fun.ThrowEgg;
 import com.gmail.robmadeyou.Problem.Kill;
 
 public class Aber {
 	
-	static Function[] functionList = {new ThrowEgg("egg"), new Kill("kill")};
+	static Function[] functionList = {new ThrowEgg("egg"), new Kill("kill"), new Boom("boom")};
 	
 	public static String getPluginName(Body plugin){
 		return ChatColor.DARK_RED + "[" + ChatColor.GOLD + plugin.getName() + ChatColor.DARK_RED + "] " + ChatColor.RESET;

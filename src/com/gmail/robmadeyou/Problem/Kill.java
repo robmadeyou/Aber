@@ -31,6 +31,9 @@ public class Kill extends Function{
 		if(!T.equals("")){
 			int amount = 0;
 			boolean entityExists = false;
+			if(T.equals("")){
+				
+			}
 			for(Entity e : plugin.getServer().getPlayer(sender.getName()).getWorld().getEntities()){
 				if(T.equals("chicken")){
 					if(e instanceof Chicken){
