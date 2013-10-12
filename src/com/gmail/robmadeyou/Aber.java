@@ -38,6 +38,15 @@ public class Aber {
 			plugin.getLogger().info(message);
 		}
 	}
+	
+	public static void replyAsPlugin(Body plugin, CommandSender sender, String message){
+		if(sender instanceof Player){
+			plugin.getServer().getPlayer(sender.getName()).sendMessage(getPluginName(plugin) + message);
+		}else if(sender instanceof ConsoleCommandSender){
+			plugin.getLogger().info(getPluginName(plugin) + message);
+		}
+	}
+	
 	public static void manageInput(Body plugin, CommandSender sender, Command cmd, String label, String[] arguments){
 		boolean allPlayers = false;
 		float power = 0;
