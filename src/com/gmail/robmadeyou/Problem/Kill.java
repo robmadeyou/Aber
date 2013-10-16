@@ -84,7 +84,7 @@ public class Kill extends Function{
 						e.remove();
 						amount++;
 					}
-				}else if(T.equals("radius")){
+				}else if(T.equals("near")){
 					entityExists = true;
 					double size = 3;
 					
